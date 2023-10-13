@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Birthday Song 🎵</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: #ffcccb; /* A soft, birthday theme background color */
+        }
+
+        .audio-container {
+            text-align: center;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #ff5733; /* A birthday theme color */
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .balloons {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="audio-container">
+        <h1>🎵 Birthday Song 🎵</h1>
+        <audio controls autoplay loop="true">
+            <source src="birthday.mp3" type="audio/mpeg">
+        </audio>
+        <img class="balloons" src="balloons.png" alt="Balloons">
+    </div>
+</body>
+</html>
